@@ -96,7 +96,7 @@ export default Controller.extend(ModalFunctionality, {
   actions: {
     uploadFile: function () {
       if (!this._audioData) {
-        this.flash('You have to record something!', 'error');
+        this.flash('Вы должны что-то записать!', 'ошибка');
         return;
       }
 
@@ -115,7 +115,7 @@ export default Controller.extend(ModalFunctionality, {
           this.set('state', 'recording_start');
           setTimeout(() => { this.set('state', 'recording'); }, 1050);
         }).catch(err => {
-          this.flash('An error occured. Did you enable voice recording in your browser?');
+          this.flash('Произошла ошибка. Вы включили запись голоса в браузере?');
           console.error(err);
         });
 
