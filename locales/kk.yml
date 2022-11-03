@@ -1,8 +1,8 @@
 kk:
   composer:
-    composer_audio_upload_button_title: "Record & upload audio file"
+    composer_audio_upload_button_title: "Дауысты жазу және жүктеу"
   composer_audio_upload:
-    button_text: "Record & upload audio"
-    title: "Record & upload audio"
+    button_text: "Дауысты жазу және жүктеу"
+    title: "Дауысты жазу және жүктеу"
   theme_metadata:
-    description: "Add voice recordings to posts"
+    description: "Дауысты жазу және жүктеу"
