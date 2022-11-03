@@ -1,36 +1,36 @@
 {{#d-modal-body class="composer-audio-upload-modal" icon="microphone" dismissable=false}}
   <div class="composer-audio-upload-content">
     <h4>
-      Record an audio file
+      Записать аудиофайл
     </h4>
     <p>
       <button class="btn {{if isRecording 'btn-danger' 'btn-secondary'}}" type="button" {{action "startStopRecording"}} class="record-button" disabled={{disallowRecord}}>
         {{#if isRecording}}
-        <span class="fa fa-stop-circle"></span> Stop recording
+        <span class="fa fa-stop-circle"></span> Остановить
         {{else}}
-        <span class="fa fa-circle"></span> Start recording
+        <span class="fa fa-circle"></span> Начать запись
         {{/if}}
       </button>
       &nbsp;
       <button class="btn btn-secondary" type="button" {{action "startStopPlayback"}} class="play-button" disabled={{disallowPlayback}}>
         {{#if isPlaying}}
-        <span class="fa fa-stop"></span> Stop playback
+        <span class="fa fa-stop"></span> Остановить
         {{else}}
-        <span class="fa fa-play"></span> Start playback
+        <span class="fa fa-play"></span> Слушать запись 
         {{/if}}
       </button>
     </p>
     <p>
       {{#if isProcessing}}
-      <span class="wait-text">Processing audio data, please wait...</span>
+      <span class="wait-text">Идет обработка аудио, пожалуйста, подождите...</span>
       {{else if isRecordingStart}}
-      <span class="wait-text">Initializing audio recording...</span>
+      <span class="wait-text">Идет иницализация аудио...</span>
       {{else if isRecording}}
-      Recording in progress, speak now :-)
+      Идет запись, говорите :-)
       {{else if hasRecording}}
-      Recording time: <strong>{{recordingDuration}}</strong> ({{recordingSize}})
+      Длительность: <strong>{{recordingDuration}}</strong> ({{recordingSize}})
       {{else}}
-      Nothing has been recorded yet
+      Еще ничего не записано
       {{/if}}
     </p>
   </div>
