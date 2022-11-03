@@ -1,7 +1,7 @@
 {{#d-modal-body class="composer-audio-upload-modal" icon="microphone" dismissable=false}}
   <div class="composer-audio-upload-content">
     <h4>
-      Записать аудиофайл
+      После записи нажмите "Загрузить" для отправки аудио
     </h4>
     <p>
       <button class="btn {{if isRecording 'btn-danger' 'btn-secondary'}}" type="button" {{action "startStopRecording"}} class="record-button" disabled={{disallowRecord}}>
